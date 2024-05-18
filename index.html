@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pomodoro Timer</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <button id="settings-btn" class="settings" type="button">
+            <ion-icon name="settings"></ion-icon>
+        </button>
+
+        <div class="hidden settings-menu" id="settings-menu">
+
+            <div class="setting-inputs">
+                <label for="work">Work Duration</label>
+                <input type="number" name="work" id="work" value="25">
+            </div>
+
+            <div class="setting-inputs">
+                <label for="rest">Rest Duration</label>
+                <input type="number" name="rest" id="rest" value="5">
+            </div>
+
+            <button id="save-btn">OK</button>
+
+        </div>
+
+        <div class="timer-container">
+            <h1>Pomodoro Timer</h1>
+            <p id="session" class="session">Work</p>
+            <p id="time">25:00</p>
+        </div>
+        
+        <div class="button-container">
+            <button id="start" class="button">Start</button>
+            <button id="reset" class="button">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
